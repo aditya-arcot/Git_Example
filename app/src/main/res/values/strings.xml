@@ -1,3 +1,24 @@
 <resources>
-    <string name="app_name">Git_Example</string>
+    <string name="app_name">UT Quick Info</string>
+    <string name="SchoolInfoSlot">Schools Information Enter Here</string>
+    <string name="ut_image">UT IMAGE</string>
+    <string name="cns">Natural Sciences</string>
+    <string name="engineering">Engineering</string>
+    <string name="la">Liberal Arts</string>
+    <string name="fa">Fine Arts</string>
+    <string name="info">School of Information</string>
+    <string name="edu">Education</string>
+    <string name="pharma">Pharmacy</string>
+    <string name="med">Medical</string>
+    <string name="grad">Graduate</string>
+    <string name="geo">Geosciences</string>
+    <string name="pAffairs">Public Affairs</string>
+    <string name="business">Business</string>
+    <string name="comm">Communication</string>
+    <string name="arch">Architecture</string>
+    <string name="law">Law</string>
+    <string name="nurse">Nursing</string>
+    <string name="social">Social Works</string>
+    <string name="undergrad">Undergraduate</string>
+    <string name="back"><![CDATA[<---]]></string>
 </resources>

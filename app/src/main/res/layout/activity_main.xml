@@ -1,18 +1,281 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/all"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:visibility="visible"
+        app:layoutManager="LinearLayoutManager"
+        tools:visibility="gone">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/backButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/back"
+        tools:visibility="gone" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/nurseText"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:drawablePadding="10dp"
+            android:elevation="2dp"
+            android:text="@string/nurse"
+            android:textAlignment="viewStart"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationY="260dp"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/socialText"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:drawablePadding="10dp"
+            android:elevation="1dp"
+            android:text="@string/social"
+            android:textAlignment="viewEnd"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationY="230dp"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/lawText"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:drawablePadding="10dp"
+            android:elevation="1dp"
+            android:text="@string/law"
+            android:textAlignment="viewEnd"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationY="260dp"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/archText"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:drawablePadding="10dp"
+            android:elevation="2dp"
+            android:text="@string/arch"
+            android:textAlignment="viewStart"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationY="290dp"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/commText"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:drawablePadding="10dp"
+            android:elevation="1dp"
+            android:text="@string/comm"
+            android:textAlignment="viewEnd"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationY="320dp"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/businessText"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:drawablePadding="10dp"
+            android:elevation="2dp"
+            android:text="@string/business"
+            android:textAlignment="viewStart"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationY="320dp"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/pAffairsText"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:drawablePadding="10dp"
+            android:elevation="1dp"
+            android:text="@string/pAffairs"
+            android:textAlignment="viewEnd"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationY="290dp"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/geoText"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:drawablePadding="10dp"
+            android:elevation="2dp"
+            android:text="@string/geo"
+            android:textAlignment="viewStart"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationY="350dp"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/gradText"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:drawablePadding="10dp"
+            android:elevation="1dp"
+            android:text="@string/grad"
+            android:textAlignment="viewEnd"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationY="350dp"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/medText"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:drawablePadding="10dp"
+            android:elevation="2dp"
+            android:text="@string/med"
+            android:textAlignment="viewStart"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationY="380dp"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/pharmaText"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:drawablePadding="10dp"
+            android:elevation="1dp"
+            android:text="@string/pharma"
+            android:textAlignment="viewEnd"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationY="380dp"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/infoText"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:drawablePadding="10dp"
+            android:elevation="1dp"
+            android:gravity="end"
+            android:text="@string/info"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationY="140dp"
+            tools:gravity="right"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/faText"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:drawablePadding="10dp"
+            android:elevation="2dp"
+            android:gravity="start"
+            android:text="@string/fa"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationY="140dp"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/eduText"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:drawablePadding="10dp"
+            android:elevation="2dp"
+            android:text="@string/edu"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationY="230dp"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/underText"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:drawablePadding="10dp"
+            android:elevation="1dp"
+            android:text="@string/undergrad"
+            android:textAlignment="viewEnd"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationY="200dp"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/cnsText"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:drawablePadding="10dp"
+            android:elevation="1dp"
+            android:text="@string/cns"
+            android:textAlignment="viewEnd"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationY="170dp"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/laText"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:drawablePadding="10dp"
+            android:elevation="2dp"
+            android:text="@string/la"
+            android:textAlignment="viewStart"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationY="170dp"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/engineeringText"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:drawablePadding="10dp"
+            android:elevation="2dp"
+            android:text="@string/engineering"
+            android:textAlignment="viewStart"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationY="200dp"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:contentDescription="@string/ut_image"
+            app:srcCompat="@drawable/ut"
+            tools:visibility="visible" />
+
+
+    </FrameLayout>
+
+</FrameLayout>
